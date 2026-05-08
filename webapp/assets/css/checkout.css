@@ -1,0 +1,62 @@
+.checkout-wrapper {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.checkout-form {
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    width: 500px;
+    border: 1px solid #333;
+}
+
+.checkout-form h3 {
+    color: white;
+    margin-bottom: 25px;
+    border-left: 4px solid #ff4757;
+    padding-left: 15px;
+}
+
+.checkout-form input, .checkout-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: #252525;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box; /* Quan trọng để input không bị tràn */
+}
+
+.order-summary {
+    background: #121212;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+.order-summary span {
+    color: #ff4757;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-confirm {
+    width: 100%;
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-confirm:hover {
+    background: #ff6b81;
+}

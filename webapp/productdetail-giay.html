@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT BADMINTON - Shop Cầu Lông</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/detail-giay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- HEADER/TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-content">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <img src="" alt="DT Badminton Logo" class="logo-img">
+                        <h1 class="logo">DT BADMINTON</h1>
+                    </div>
+                    <p class="tagline">Chất Lượng - Uy Tín - Thương Hiệu</p>
+                </div>
+                <div class="search-section">
+                    <input type="text" id="searchInput" placeholder="🔍 Tra cứu sản phẩm...">
+                    <button onclick="searchProducts()">Tìm kiếm</button>
+                </div>
+                <div class="contact-section">
+                    <p>📞 Hotline: <strong>0886734743</strong></p>
+                    <button class="cart-btn" onclick="openCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <nav class="navbar">
+        <ul class="menu-ngang">
+            <li><a href="#home">🏠 TRANG CHỦ</a></li>
+            <li class="menu-dropdown">
+                <a href="#products">🛍️ SẢN PHẨM</a>
+                <ul class="submenu">
+                    <li><a href="#vot">🎾 Vợt Cầu Lông</a></li>
+                    <li><a href="#giay">👟 Giày Cầu Lông</a></li>
+                    <li><a href="#qua">🏐 Quả Cầu Lông</a></li>
+                    <li><a href="#tui">👜 Túi & Balo</a></li>
+                    <li><a href="#day">🔗 Dây & Phụ Kiện</a></li>
+                    <li><a href="#ao">👕 Áo Quần Thi Đấu</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="add-category">+ Thêm Danh Mục Khác</a></li>
+                </ul>
+            </li>
+            <li><a href="#sale">🔥 SALE OFF</a></li>
+            <li><a href="#news">📰 TIN TỨC</a></li>
+            <li><a href="#about">ℹ️ GIỚI THIỆU</a></li>
+            <li><a href="#contact">💬 LIÊN HỆ</a></li>
+        </ul>
+    </nav>
+
+    <!-- BANNER SLIDESHOW -->
+    <section class="banner-container" id="home">
+        <div class="banner-slider">
+            <div class="slide active">
+                <img src="" alt="Banner 1">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h2 class="banner-text">Vợt Cầu Lông Pro</h2>
+                        <p class="slide-subtitle">Chất Lượng Cao - Giá Tốt Nhất</p>
+                        <button class="cta-button">Mua Ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="" alt="Banner 2">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h2 class="banner-text">Giày Thể Thao Cao Cấp</h2>
+                        <p class="slide-subtitle">Thoải Mái - Bền Bỉ - Phong Cách</p>
+                        <button class="cta-button">Khám Phá</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="" alt="Banner 3">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h2 class="banner-text">Quả Cầu Lông Chính Hãng</h2>
+                        <p class="slide-subtitle">Độ Bền Cao - Chất Lượng Quốc Tế</p>
+                        <button class="cta-button">Xem Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Navigation -->
+        <div class="slide-nav">
+            <button class="slide-prev" onclick="changeSlide(-1)">❮</button>
+            <button class="slide-next" onclick="changeSlide(1)">❯</button>
+        </div>
+
+        <!-- Slide Indicators -->
+        <div class="slide-indicators">
+            <span class="indicator active" onclick="currentSlide(0)"></span>
+            <span class="indicator" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+    <section class="product-detail-container">
+        <div class="menu-detail">
+            
+        </div>
+    </section>
+     
+
+
+   
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Về Chúng Tôi</h4>
+                    <p>DT Badminton - Nhà cung cấp đồ cầu lông chính hãng hàng đầu tại Việt Nam.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Hệ</h4>
+                    <p>📧 Email: info@dtbadminton.com</p>
+                    <p>📞 Điện thoại: 0886734743</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Theo Dõi Chúng Tôi</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DT BADMINTON. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">
+        <span>✓ Đã thêm vào giỏ hàng thành công</span>
+    </div>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-container">
+            <button class="cart-close" onclick="closeCart()">✕</button>
+            <h2>Giỏ hàng của bạn</h2>
+            <div id="cartItems" class="cart-items"></div>
+            <div class="cart-summary" id="cartSummary"></div>
+
+            <form id="orderForm" class="order-form">
+                <h3>Thông tin khách hàng</h3>
+                <div class="field-row"><label>Tên Khách Hàng</label><input type="text" id="customerName" placeholder="Nhập tên" required></div>
+                <div class="field-row"><label>SDT</label><input type="tel" id="customerPhone" placeholder="Nhập số điện thoại" required></div>
+                <div class="field-row"><label>Địa Chỉ Cụ Thể</label><input type="text" id="customerAddress" placeholder="Nhập địa chỉ" required></div>
+            </form>
+
+            <div class="cart-actions">
+                <button class="cart-empty" onclick="clearCart()">Xóa hết</button>
+                <button class="cart-checkout" onclick="submitOrder()">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-modal" id="successModal">
+        <div class="success-modal-content">
+            <div class="success-badge">✓</div>
+            <h2>Đặt hàng thành công!</h2>
+            <p id="successText"></p>
+            <div class="success-actions">
+                <button class="success-history" onclick="viewHistory()">Xem lịch sử đơn hàng</button>
+                <button class="success-close" onclick="closeSuccess()">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="history-modal" id="historyModal">
+        <div class="history-modal-content">
+            <button class="history-close" onclick="closeHistory()">✕</button>
+            <h2>Lịch sử đơn hàng</h2>
+            <div id="historyContent" class="history-content"></div>
+        </div>
+    </div>
+
+    <!-- SIZE SELECTION MODAL -->
+    <div class="size-modal size-modals" id="sizeModal">
+        <div class="size-modal-content">
+            <button class="size-close" onclick="closeSizeModal()">✕</button>
+            <h2>Chọn kích thước</h2>
+            <div id="sizeProductInfo" class="size-product-info"></div>
+            <div class="size-options">
+                <label for="sizeSelect">Chọn kích thước:</label>
+                <select id="sizeSelect">
+                    <option value="">-- Chọn kích thước --</option>
+                </select>
+            </div>
+            <div class="size-actions">
+                <button class="size-cancel" onclick="closeSizeModal()">Hủy</button>
+                <button class="size-add" onclick="addToCartWithSize()">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</html>

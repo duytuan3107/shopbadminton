@@ -1,0 +1,207 @@
+/* assets/css/product-detail.css */
+.detail-wrapper {
+    padding: 50px 0;
+    background-color: #1a1a1a;
+    min-height: 80vh;
+}
+.product-detail-container {
+    display: flex;
+    gap: 40px;
+    align-items: start;
+}
+.detail-left {
+    flex: 1;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+.detail-left img {
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.detail-right {
+    flex: 1.2;
+    color: #eee;
+}
+.p-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.p-price {
+    font-size: 28px;
+    color: #ff4757;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.p-desc-title {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+.p-desc {
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+.action-btns {
+    display: flex;
+    gap: 15px;
+}
+.btn-add-cart {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-add-cart:hover {
+    background: #ff6b81;
+    transform: translateY(-2px);
+}
+.back-home {
+    margin-top: 20px;
+    display: inline-block;
+    color: #888;
+    text-decoration: none;
+}
+.back-home:hover {
+    color: #fff;
+}
+/* Container chính */
+.detail-wrapper {
+    padding: 60px 0;
+}
+
+.detail-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+
+/* Khối bên trái: Ảnh */
+.detail-left {
+    flex: 1;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+.detail-left img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Khối bên phải: Thông tin */
+.detail-right {
+    flex: 1.2;
+}
+
+.detail-right h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.product-price {
+    font-size: 28px;
+    color: #ff4757;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description-box {
+    background: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #ff4757;
+    margin-bottom: 30px;
+}
+
+.description-box h3 {
+    margin-top: 0;
+    color: #aaa;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.description-box p {
+    color: #ccc;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Form mua hàng */
+.action-section form {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+    background: #252525;
+    border-radius: 8px;
+    padding: 0 15px;
+    border: 1px solid #444;
+}
+
+.quantity-box label {
+    color: #888;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.quantity-box input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 50px;
+    padding: 15px 0;
+    font-size: 18px;
+    outline: none;
+}
+
+.btn-add-cart {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.btn-add-cart:hover {
+    background: #ff6b81;
+}
+
+.back-home {
+    margin-top: 30px;
+}
+
+.back-home a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.back-home a:hover {
+    color: #ff4757;
+}

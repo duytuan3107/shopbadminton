@@ -1,0 +1,164 @@
+/* Biến màu sắc chủ đạo để dễ quản lý */
+:root {
+    --primary-red: #ff4d4d;      /* Đỏ thương hiệu */
+    --hover-red: #e60000;
+    --dark-bg: #121212;         /* Nền tổng thể */
+    --card-bg: #1e1e1e;         /* Nền bảng và modal */
+    --text-white: #ffffff;
+    --text-gray: #aaaaaa;
+    --border-color: #333333;
+}
+
+body.dark-theme {
+    background-color: var(--dark-bg);
+    color: var(--text-white);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- Bảng quản lý sản phẩm --- */
+.manager-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-actions h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-actions h2 b {
+    color: var(--primary-red);
+}
+
+.manager-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.manager-table th {
+    background-color: #252525;
+    color: var(--primary-red);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px;
+    border-bottom: 2px solid var(--primary-red);
+}
+
+.manager-table td {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+}
+
+/* ÉP KÍCH THƯỚC ẢNH ĐỒNG BỘ */
+.img-product {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover; /* Chống méo ảnh */
+    border-radius: 6px;
+    border: 1px solid #444;
+    display: block;
+}
+
+/* Icon hành động */
+.edit i { color: #ffc107; margin-right: 15px; font-size: 18px; }
+.delete i { color: var(--primary-red); font-size: 18px; }
+
+/* --- Nút bấm (Buttons) --- */
+.btn {
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-success {
+    background-color: var(--primary-red);
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: var(--hover-red);
+    box-shadow: 0 0 12px rgba(255, 77, 77, 0.4);
+}
+
+.btn-default {
+    background-color: #444;
+    color: white;
+}
+
+/* --- Modal (Hộp thoại thêm sản phẩm) --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    margin: 5% auto;
+    padding: 25px;
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid var(--primary-red);
+    color: white;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.modal-title { margin: 0; color: var(--primary-red); }
+
+.close { color: white; font-size: 30px; cursor: pointer; }
+
+.form-group { margin: 15px 0; }
+
+.form-group label { display: block; margin-bottom: 5px; color: var(--text-gray); }
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-red);
+}
+
+.modal-footer {
+    text-align: right;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+}
